@@ -6,3 +6,16 @@
   - peeking at the heap's minimum / root value
   - sifting integers up and down the heap, which is to be used when inserting and removing value
 - type of heap is array
+- the heap is binary tree and complete exceptional last level
+- min heap the  root is minimum value of heap
+- in the array representation 
+  - currentnode index i
+  - childOne index i*2 +1
+  - childTwo index i*2 +2
+- the good thing about heap we can find parent from current node 
+  - by rounding down result of (index -1)/2 
+- order of function should build
+  - insert shirt up
+  - remove shirt down
+  - build 
+  - other
