@@ -15,7 +15,29 @@
 - the good thing about heap we can find parent from current node 
   - by rounding down result of (index -1)/2 
 - order of function should build
-  - insert shirt up
-  - remove shirt down
+  - insert sirtup
+      - sirtUp: 
+        - look for idx of the parent node then compare the current idx value with parent node value if current is smaller is move up,
+        - replace the current idx by parent idx back to previuos line by loop
+        - else do notthing
+      - insert:
+        - insert the new value at the end of array
+        - call sirtUp  at the current idex
+  - remove sirt down
+      - sirtDown:
+        - to be able move down the current value must less then the child when call
+        - identify the child node idx, compare two child node value if posible
+        - the only child has smaller value will be on the swap pos
+        - if the value is smaller than parent swap , otherwise do nothing
+        - if can swap update the index if current idx to the 
+      - remove:
+        - swap the value fo zero index with the last index
+        - call remove function for the last index
+        - call the siftdown for the value that just swap
   - build 
+        - choose the start index with the mid index value, 
+        - call the move down fuction , at current index
+        - reduce index by one start the second step until index in less than zero
+        - re turen 
   - other
+        - swap helper function 
